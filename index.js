@@ -42,7 +42,10 @@ process.stdin.setRawMode(true);
 process.stdin.resume();
 
 
-var board = new firmata.Board('/dev/tty.wchusbserialfd120', function () {
+var board = new firmata.Board('/dev/tty.wchusbserialfd120', function (e) {
+    if(e){
+        throw new Error(e);
+    }
 
     board.setSamplingInterval(100);
     var values = {};
@@ -59,4 +62,8 @@ var board = new firmata.Board('/dev/tty.wchusbserialfd120', function () {
     setInterval(function(){
         console.log(current,values);
     },500);
+
+    board.on('string',function(){
+        console.error(arguments);
+    })
 });
