@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/wyvernnot/mbot#readme",
   "dependencies": {
-    "firmata": "^0.5.5"
+    "firmata": "^0.5.5",
+    "keypress": "^0.2.1"
   }
 }
