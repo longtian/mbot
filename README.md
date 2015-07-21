@@ -130,9 +130,9 @@ node index.js
 
 ### CPU 架构图
 
-[![CPU](reference/atmel_block.jpg)](reference/atmel_datasheet.pdf)
+[![CPU](reference/atmel_block.png)](reference/atmel_datasheet.pdf)
 
 ### PCB 设计图
 
-[![PCB](reference/mcore_pcb_preview.jpg)](reference/mCore.pdf)
+[![PCB](reference/mcore_pcb_preview.png)](reference/mCore.pdf)
 
