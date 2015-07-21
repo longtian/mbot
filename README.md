@@ -15,42 +15,35 @@ mBot 附带了非常方便的图形化界面 IDE ，也可以使用 Arduino IDE 
 
 ![components](reference/mcore_components.jpg)
 
-**红外装置**
-
-- D2 - 红外接受
-- D3 - 红外发送
-
-**光线**
-
-- D10 - 光线传感器
-
-**行进装置**
-
-- D4 - 左轮方向
-- D5 - 左轮
-- D6 - 右轮
-- D7 - 右轮方向
-
-**蜂鸣器**
-
-- D8 - 蜂鸣器
-
-**超声测距**
-
-- D12 - 超声波发射器
-
-**LED**
-
-- D13 - LED
-
 **传感器**
 
+- D2 红外接收器
+- D3 红外发射器
+- D10 光线传感器
+- D12 超声波发射器
 - A0(D14) - 左轨道传感器
 - A1(D15) - 右轨道传感器
 
+**电机**
+
+- D4 左轮方向
+- D5 左轮
+- D6 右轮
+- D7 右轮方向
+
+**蜂鸣器**
+
+- D8 蜂鸣器
+- D* 按键
+
+**LED**
+
+- D13 LED 指示器
+- D* LED 彩灯
+
 ## 使用说明
 
-> index.js 目前只是一个 POC，用来探索各个针脚的功能和用法。
+目前还只是一个 POC，用来探索各个针脚的功能和用法。
 
 1\. 启动主程序
 
@@ -67,65 +60,64 @@ node index.js
 
 ### 针脚按照读取模式分类
 
-**Mode: INPUT (0)**
+**INPUT (0)**
 
 Pins: D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19
 
-**Mode: OUTPUT (1)**
+**OUTPUT (1)**
 
 Pins: D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19
 
-**Mode: ANALOG (2)**
+**ANALOG (2)**
 
 Pins: D14,D15,D16,D17,D18,D19
 
-**Mode: PWM (3)**
+**PWM (3)**
 
 Pins: D3,D5,D6,D9,D10,D11
 
-**Mode: SERVO (4)**
+**SERVO (4)**
 
 Pins: D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13
 
-**Mode: SHIFT (5)**
+**SHIFT (5)**
 
 Pins: N/A
 
-**Mode: I2C (6)**
+**I2C (6)**
 
 Pins: D18,D19
 
-**Mode: ONEWIRE (7)**
+**ONEWIRE (7)**
 
 **Pins: N/A
 
-**Mode: STEPPER (8)**
+**STEPPER (8)**
 
 Pins: N/A
 
-**Mode: IGNORE (127)**
+**IGNORE (127)**
 
 Pins: N/A
 
-**Mode: UNKOWN (16)**
+**UNKOWN (16)**
 
 Pins: N/A
 
 ### 术语表
 
 - Arduino
-- Makeblock
-- PCB
 - Analog
-- PWM
-- Servo
+- GND
 - I2C
-- Onewire
-- Stepper
 - IR
 - LED
+- Onewire
+- PCB
+- PWM
+- Servo
+- Stepper
 - VBUS
-- GND
 - VCC
 
 ### CPU 架构图
