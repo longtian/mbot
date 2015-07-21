@@ -2,9 +2,7 @@
 
 > 非常感谢 CNode 社区赠送的 mBot 机器人!
 
-**官方的组装图**
-
-![wiring](reference/mcore_wiring.jpg)
+![Oula](reference/oula.png)
 
 ## 怎么玩
 
@@ -19,10 +17,11 @@ mBot 附带了非常方便的图形化界面 IDE ，也可以使用 Arduino IDE 
 
 - D2 红外接收器
 - D3 红外发射器
-- D10 光线传感器
 - D12 超声波发射器
 - A0(D14) - 左轨道传感器
 - A1(D15) - 右轨道传感器
+- A6(D20) - 光线传感器
+- A7(D21) 按键
 
 **电机**
 
@@ -34,12 +33,11 @@ mBot 附带了非常方便的图形化界面 IDE ，也可以使用 Arduino IDE 
 **蜂鸣器**
 
 - D8 蜂鸣器
-- D* 按键
 
 **LED**
 
 - D13 LED 指示器
-- D* LED 彩灯
+- D13 LED 彩灯
 
 ## 使用说明
 
@@ -70,7 +68,7 @@ Pins: D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19
 
 **ANALOG (2)**
 
-Pins: D14,D15,D16,D17,D18,D19
+Pins: D14,D15,D16,D17,D18,D19,D20,D21
 
 **PWM (3)**
 
@@ -78,7 +76,7 @@ Pins: D3,D5,D6,D9,D10,D11
 
 **SERVO (4)**
 
-Pins: D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13
+Pins: D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19
 
 **SHIFT (5)**
 
@@ -119,6 +117,10 @@ Pins: N/A
 - Stepper
 - VBUS
 - VCC
+
+### 连线
+
+![wiring](reference/mcore_wiring.jpg)
 
 ### CPU 架构图
 
